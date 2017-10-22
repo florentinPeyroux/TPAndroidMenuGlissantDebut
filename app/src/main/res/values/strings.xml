@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TPAndroidMenuGlissant</string>
+    <string name="title_activity_film">Films</string>
+    <string name="title_activity_serie">Series</string>
+    <string name="title_activity_series">SeriesActivity</string>
+
+</resources>
