@@ -26,10 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
     };*/
 
+    //fonction qui lance l'activité Film
     public void lanceFilm(View v){
         Intent intent = new Intent(this, FilmActivity.class);
         startActivity(intent);
     }
+
+    //fonction qui lance l'activité Serie
     public void lanceSeries(View v){
         Intent intent = new Intent(this, SeriesActivity.class);
         startActivity(intent);
@@ -38,24 +41,31 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //recupere le drawerLayout
       //  drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
 
+        // desactive un bouton non utilisé
 /*        Button btn = (Button) findViewById(R.id.button7);
         btn.setEnabled(false);
 
+
         mListView = (ListView) findViewById(R.id.listView);
 
+        //affiche les actualitées
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,
                 android.R.layout.simple_list_item_1, actualité);
         mListView.setAdapter(adapter);*/
     }
 
+    //fonction qui affiche le menu
 /*    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu,menu);
         return true;
     }
 
+    //fonction qui affiche le menu situé à gauche de l'écran si l'id de selectionné
+    // est le meme que celui de l'item hamburger
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
